@@ -11,18 +11,14 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "iqdb-client" : "1.0.5"
+    "iqdb-client" : "^1.0.5"
+  },
+  "devDependencies": {
+    "express": "^4.17.1",
+    "iqdb-client" : "^1.0.5"
   },
   "engines": {
     "node": "12.x"
   },
-  "repository": {
-    "url": "https://glitch.com/edit/#!/hello-express"
-  },
-  "license": "MIT",
-  "keywords": [
-    "node",
-    "glitch",
-    "express"
-  ]
+  "license": "MIT"
 }
