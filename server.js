@@ -9,8 +9,10 @@ response.send(200, "viydi otsuda");
 
 
 app.get("/iqdb", (request, response) => {
-  if (request.query != undefined && request.query.url != undefined && request.query.url >  const searchPic = require('iqdb-client');
-  searchPic.searchPic(request.query.url, { lib: 'www' }).then(i => {return response.send>  } else{
+  if (request.query != undefined && request.query.url != undefined && request.query.url != ''){
+  const searchPic = require('iqdb-client');
+  searchPic.searchPic(request.query.url, { lib: 'www' }).then(i => {return response.send(200, i.data)});
+  } else{
     response.sendStatus(406);
   }
 });
