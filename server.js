@@ -19,7 +19,7 @@ app.get("/iqdb", (request, response) => {
 
 app.get("/saucenao", (request, response) => {
   if (request.query != undefined && request.query.url != undefined && request.query.url >  const fetch = require('node-fetch');
-  fetch(`https://saucenao.com/search.php?db=999&output_type=2&numres=1&api_key=${TOKEN}&url=${request.query.url}`).then(res => res.json()).then(i => {return response.send(200, i)});
+  fetch(`https://saucenao.com/search.php?db=999&output_type=2&numres=1&api_key=${TOKEN}&url=${request.query.url}`).then(res => res.json()).then(i => {return response.send(200, i)});// заменить {TOKEN} на токен 
     } else{
     response.sendStatus(406);
   }
